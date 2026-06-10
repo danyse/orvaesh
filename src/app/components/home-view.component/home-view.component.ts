@@ -31,9 +31,8 @@ export class HomeViewComponent {
 
   instagram = [
     '/images/home/blog-1.jpg',
-    '/images/home/blog-1.jpg',
-    '/images/home/blog-1.jpg',
-    '/images/home/blog-1.jpg',
-   
+    '/images/home/blog-2.jpg',
+    '/images/home/blog-3.jpg',
+    '/images/home/blog-main.jpg'
   ];
 }
