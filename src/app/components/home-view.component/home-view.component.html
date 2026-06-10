@@ -1,0 +1,234 @@
+<div class="home-view" dir="rtl">
+    <div class="top-strip">
+        משלוח עד הבית 35 ש"ח / חינם בהזמנות מעל 450 ש"ח
+    </div>
+
+    <header class="site-header">
+        <div class="header-row">
+            <div class="logo">
+                <div class="logo-title">אור ואש </div>
+                <div class="logo-subtitle">RAW MATERIALS</div>
+            </div>
+
+         <div class="search-box">
+  <input
+    type="text"
+    placeholder="חיפוש מוצר">
+
+  <i class="fa-solid fa-magnifying-glass"></i>
+</div>
+
+           <div class="header-actions">
+  <span class="header-action">
+    חשבון
+    <i class="fa-regular fa-user"></i>
+  </span>
+
+  <span class="header-action">
+    סל קניות
+    <i class="fa-solid fa-bag-shopping"></i>
+  </span>
+</div>
+        </div>
+
+        <nav class="main-nav">
+            <a>חומרי גלם לקוסמטיקה</a>
+            <a>בקבוקים וצנצנות</a>
+            <a>מתכונים ומדריכים</a>
+            <a>קורסים וערכות</a>
+            <a>מרכז הדרכה ולימודים מקצועי</a>
+            <a>ייעוץ והתאמה אישית</a>
+            <a>הבלוג שלנו</a>
+            <a>054-3240140</a>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-text">
+            <div class="small-title">יאלי הוד</div>
+            <h1>חומרי גלם לקוסמטיקה ורוקחות טבעית</h1>
+            <p>
+                החנות שלך לחומרי גלם מובחרים, טבעיים, אורגניים ופעילים לעוסקים
+                בקוסמטיקה, רוקחות טבעית וארומתרפיה.
+            </p>
+            <div class="hero-buttons">
+                <button>חומרי גלם</button>
+                <button>סדנאות וקורסים</button>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="/images/home/hero.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="products-section">
+        <h2>מוצרים מומלצים</h2>
+
+        <div class="products-grid">
+            <article class="product-card" *ngFor="let product of products">
+                <div class="product-image">
+                    <img [src]="product.image" [alt]="product.name">
+                </div>
+
+                <h3>{{ product.name }}</h3>
+
+                <div class="reviews">
+                    ★★★★★ <span>{{ product.reviews }} Reviews</span>
+                </div>
+
+                <div class="price">
+                    החל מ {{ product.price }}
+                </div>
+            </article>
+        </div>
+    </section>
+
+<section class="study-section">
+  <div class="study-text">
+    <div class="small-title">קוסמטיקה טבעית מתקדמת</div>
+
+    <h2>מרכז הדרכה ולימודים מקצועי</h2>
+
+    <p>
+      סקרנית להכיר את עולם הקוסמטיקה הטבעית? זה המקום בשבילך ללמוד,
+      להעשיר ולהתפתח עם מגוון הקורסים והסדנאות להכנת מוצרי קוסמטיקה
+      וטיפוח טבעיים ומקצועיים.
+    </p>
+
+    <button>לצפייה במגוון אפשרויות הלימוד</button>
+  </div>
+
+  <div class="study-image">
+    <img src="/images/home/hero.jpg" alt="">
+  </div>
+</section>
+
+    <section class="two-banners">
+        <div class="banner banner-one">
+            <div>קורס רוקחות טבעית מעשית וסודות</div>
+        </div>
+
+        <div class="banner banner-two">
+            <div>מחפשת רעיון מדליק לערב בנות או יום הולדת?</div>
+        </div>
+    </section>
+
+    <section class="member-club-hero">
+        <div class="member-club-overlay">
+            <h2>מועדון התוכן למנויים של יאלי הוד</h2>
+            <p>תוכן מקצועי וייחודי / מפגשי זום חודשיים / קבוצות מיקוד / הטבות לחברים</p>
+            <button>להצטרפות לחצי כאן</button>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <h2>חדש/ה אצלנו?</h2>
+        <p>
+            נרשמים לרשימת הדיוור שלנו ומקבלים עדכונים מיוחדים,
+            מתכונים ומגוון הטבות בלעדיות ושוות לפני כולם!
+        </p>
+
+        <form>
+            <input type="email" placeholder="הזן דואר אלקטרוני">
+            <button type="button">הרשמה</button>
+        </form>
+    </section>
+
+    <section class="blog-section">
+         <div class="blog-main">
+
+             <a class="view-all">צפייה בהכל</a>
+
+            <h3>מאמרים אחרונים</h3>
+
+            <article class="blog-post" *ngFor="let post of posts">
+                <img [src]="post.image" [alt]="post.title">
+
+                <div class="blog-post-content">
+                    <h4>{{ post.title }}</h4>
+                    <span>אפר 28, 2026</span>
+                </div>
+            </article>
+
+
+
+           
+        </div>
+        <div class="blog-side">
+            <h2>הבלוג שלנו</h2>
+            <img src="/images/home/blog-main.jpg" alt="">
+        </div>
+
+       
+    </section>
+
+<section class="instagram-feed">
+  <h2>FOLLOW US ON INSTAGRAM &#64;YALI_HOD</h2>
+
+  <div class="instagram-feed-grid">
+    <a class="instagram-item" *ngFor="let image of instagram">
+      <img [src]="image" alt="Instagram">
+
+      <div class="instagram-hover">
+        <span>♥</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+    <section class="info-cards">
+        <article class="info-card" *ngFor="let card of cards">
+            <img [src]="card.image" [alt]="card.title">
+            <h3>{{ card.title }}</h3>
+            <p>
+                הכירי את עולם חומרי הגלם, הסדנאות והקורסים המקצועיים שלנו
+                בצורה פשוטה, נעימה וברורה.
+            </p>
+            <button>{{ card.button }}</button>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h3>YALI HOD</h3>
+                <p>
+                    חומרי גלם איכותיים לקוסמטיקה טבעית, רוקחות טבעית,
+                    סדנאות, קורסים ומתכונים מקצועיים.
+                </p>
+            </div>
+
+            <div>
+                <h4>ניווט מהיר</h4>
+                <a>חנות</a>
+                <a>קורסים וסדנאות</a>
+                <a>בלוג</a>
+                <a>צור קשר</a>
+            </div>
+
+            <div>
+                <h4>שירות לקוחות</h4>
+                <a>משלוחים</a>
+                <a>החלפות והחזרות</a>
+                <a>תקנון האתר</a>
+                <a>מדיניות פרטיות</a>
+            </div>
+
+            <div>
+                <h4>יצירת קשר</h4>
+                <p>טלפון: 054-3240140</p>
+                <p>דוא"ל: info&#64;yali-hod.co.il</p>
+            </div>
+        </div>
+    </footer>
+
+<!--     <div class="cookie-box">
+        <button class="cookie-close">×</button>
+        <p>
+            האתר עושה שימוש בקובצי Cookies כדי לאפשר חוויית גלישה חלקה,
+            לשפר את תפקוד האתר ולהתאים עבורך את התוכן וההצעות.
+        </p>
+        <button>הבנתי</button>
+    </div> -->
+</div>

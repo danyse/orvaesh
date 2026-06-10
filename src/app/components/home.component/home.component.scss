@@ -1,5 +1,4 @@
-:host {
-  // Palette nature
+/* :host {
   --background: #fbfaf5;
   --foreground: #1f2a23;
   --muted: #f1eee5;
@@ -37,10 +36,11 @@ h3 {
   letter-spacing: -0.01em;
   margin: 0;
 }
-aside
-{
+
+aside {
   position: sticky;
 }
+
 .layout {
   display: flex;
   min-height: 100vh;
@@ -48,27 +48,24 @@ aside
 
 }
 
-/* SIDEBAR (à droite en RTL : flex naturel) */
-/* SIDEBAR (à droite en RTL) */
+
 .sidebar {
 
-  order: 1; 
+  order: 1;
   width: 240px;
-  
-  /* 🎨 AJOUTE CE DÉGRADÉ BEIGE NATUREL EXACTEMENT ICI */
-   background: linear-gradient(180deg, #f7f5ee 0%, #fbfaf5 100%);
-  
-  color: var(--foreground);     
-  padding: 1.5rem 1rem;          
+  background: linear-gradient(180deg, #f7f5ee 0%, #fbfaf5 100%);
+
+  color: var(--foreground);
+  padding: 1.5rem 1rem;
   transition: width .3s ease;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  border-left: 1px solid var(--border); 
-  text-align: right;             
+  border-left: 1px solid var(--border);
+  text-align: right;
   position: sticky;
   top: 0;
-  height: 100vh; /* Force la sidebar à prendre toute la hauteur de l'écran */
+  height: 100vh;
 
 
   &__header {
@@ -76,7 +73,7 @@ aside
     align-items: center;
     gap: .5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border); /* Utilise la couleur de bordure plutôt que le blanc transparent */
+    border-bottom: 1px solid var(--border);
 
     .leaf {
       color: var(--amber);
@@ -91,7 +88,7 @@ aside
   &__group {
     display: flex;
     flex-direction: column;
-    gap: .5rem; /* Un tout petit peu plus d'espace entre les liens */
+    gap: .5rem;
   }
 
   &__label {
@@ -101,23 +98,23 @@ aside
     margin: 0 0 .25rem;
   }
 
-  /* Cherche cette section à l'intérieur de .sidebar { ... } */
-a {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* ✅ Aligne tout le bloc à droite */
-  flex-direction: row;        /* ✅ Met l'icône à droite et le texte à gauche */
-  gap: .75rem;
-  padding: .5rem .75rem;
-  border-radius: 6px;
-  color: var(--foreground);
-  text-decoration: none;
-  font-size: .9rem;
 
-  &:hover {
-    background: var(--muted);
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: .75rem;
+    padding: .5rem .75rem;
+    border-radius: 6px;
+    color: var(--foreground);
+    text-decoration: none;
+    font-size: .9rem;
+
+    &:hover {
+      background: var(--muted);
+    }
   }
-}
 
 }
 
@@ -125,9 +122,8 @@ a {
   width: 64px;
 }
 
-/* MAIN */
 .main {
- order: 2; 
+  order: 2;
   flex: 1;
   min-width: 0;
   display: flex;
@@ -212,27 +208,24 @@ a {
   }
 }
 
-
-/* HERO */
-/* HERO */
 .hero {
-  position: relative; 
-  height: 80vh; 
-  min-height: 560px; 
+  position: relative;
+  height: 80vh;
+  min-height: 560px;
   overflow: hidden;
 
-  img { 
-    position: absolute; 
-    inset: 0; 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  &__overlay { 
-    position: absolute; 
-    inset: 0; 
-    background: var(--gradient-hero); 
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-hero);
   }
 
   &__content {
@@ -245,12 +238,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-start; /* 📐 Force tout le contenu à s'aligner à droite en RTL */
+    align-items: flex-start;
     padding-bottom: 6rem;
     color: var(--on-dark);
-    text-align: right; 
+    text-align: right;
 
-    /* Force le petit texte du haut à rester à droite */
+
     .eyebrow {
       align-self: flex-start;
       text-align: right;
@@ -258,18 +251,18 @@ a {
     }
 
     h1 {
-      font-family: 'Frank Ruhl Libre', serif !important; /* Force la police premium */
-      font-size: clamp(2.5rem, 6vw, 5.5rem); 
+      font-family: 'Frank Ruhl Libre', serif !important;
+      font-size: clamp(2.5rem, 6vw, 5.5rem);
       line-height: 1.1;
       max-width: 58rem;
-      font-weight: 900; 
+      font-weight: 900;
       margin: 0;
       text-align: right;
       width: 100%;
 
       em {
-        color: var(--amber); 
-        font-style: italic;  
+        color: var(--amber);
+        font-style: italic;
       }
     }
 
@@ -284,13 +277,13 @@ a {
     }
   }
 
-  /* 📐 Aligne la ligne de boutons vers la droite */
-  &__cta { 
-    margin-top: 2.5rem; 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: flex-start; 
-    gap: 1rem; 
+
+  &__cta {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
     width: 100%;
   }
 }
@@ -339,18 +332,16 @@ a {
   }
 }
 
-/* BENEFITS */
 
-/* BENEFITS */
 .benefits {
   max-width: 1200px;
   margin: 0 auto;
   padding: 6rem 1.5rem;
-  text-align: center; /* ✅ Centre tout le contenu de la section (titre + blocs) */
+  text-align: center;
 
   h2 {
     font-size: clamp(2rem, 4vw, 3rem);
-    max-width: 100%;   /* 🚀 CHANGE ICI : Permet au titre de prendre toute la largeur sur une seule ligne */
+    max-width: 100%;
     margin-bottom: 4rem;
     margin-inline: auto;
   }
@@ -358,8 +349,7 @@ a {
   &__grid {
     display: grid;
     gap: 2.5rem;
-    /* 🛠️ PASSE À 4 COLONNES : Ajuste le minmax pour que les 4 blocs s'alignent sur une seule ligne */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 100%;
   }
 }
@@ -367,8 +357,8 @@ a {
 .benefit {
   display: flex;
   flex-direction: column;
-  align-items: center; /* ✅ Centre l'icône horizontalement dans son bloc */
-  text-align: center;  /* ✅ Centre le titre et la description textuelle */
+  align-items: center;
+  text-align: center;
 
   &__icon {
     width: 56px;
@@ -398,12 +388,12 @@ a {
     line-height: 1.6;
     color: var(--muted-fg);
     margin: 0;
-    max-width: 260px; /* ✅ Empêche le texte descriptif de trop s'étaler pour rester élégant */
+    max-width: 260px;
     margin-inline: auto;
   }
 }
 
-/* COLLECTION */
+
 .collection {
   background: var(--muted);
   padding: 6rem 0;
@@ -508,7 +498,7 @@ a {
   }
 }
 
-/* QUOTE */
+
 .quote {
   max-width: 900px;
   margin: 0 auto;
@@ -537,7 +527,7 @@ a {
   }
 }
 
-/* CTA */
+
 .cta {
   max-width: 1200px;
   margin: 0 auto 6rem;
@@ -591,7 +581,7 @@ a {
   }
 }
 
-/* FOOTER */
+
 .footer {
   border-top: 1px solid var(--border);
   display: flex;
@@ -631,4 +621,4 @@ a {
     bottom: 0;
     z-index: 40;
   }
-}
+} */
