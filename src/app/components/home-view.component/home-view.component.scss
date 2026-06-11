@@ -559,6 +559,8 @@ img {
   text-decoration: none;
 }
 
+
+
 @media (max-width: 1100px) {
   .desktop-page {
     display: none;
@@ -566,18 +568,22 @@ img {
 
   .mobile-page {
     display: block;
+    background: #fff;
   }
 
   .top-strip {
-    height: 28px;
+    height: 30px;
     font-size: 11px;
+    padding: 0 10px;
+    text-align: center;
   }
 
   .header-row {
-    height: 62px;
-    padding: 0 14px;
+    height: 66px;
+    padding: 0 16px;
     display: grid;
-    grid-template-columns: 38px 1fr 38px;
+    grid-template-columns: 42px 1fr 42px;
+    align-items: center;
     direction: rtl;
   }
 
@@ -589,7 +595,7 @@ img {
     background: transparent;
     color: #111;
     padding: 0;
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .mobile-menu {
@@ -606,7 +612,7 @@ img {
   }
 
   .logo-title {
-    font-size: 27px;
+    font-size: 30px;
   }
 
   .logo-subtitle {
@@ -619,15 +625,19 @@ img {
     display: none;
   }
 
+  .m-hero {
+    background: #fbf8f2;
+  }
+
   .m-hero img {
     width: 100%;
-    height: 330px;
+    height: 360px;
     object-fit: cover;
+    display: block;
   }
 
   .m-hero-text {
-    background: #fbf8f2;
-    padding: 34px 22px 36px;
+    padding: 46px 28px 50px;
     text-align: center;
   }
 
@@ -635,20 +645,21 @@ img {
     color: #8c7a61;
     font-size: 13px;
     letter-spacing: 7px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 
   .m-hero h1 {
-    font-size: 33px;
-    line-height: 1.15;
-    margin: 0 0 14px;
+    font-size: 36px;
+    line-height: 1.16;
+    margin: 0 0 18px;
     font-weight: 900;
   }
 
   .m-hero p {
-    font-size: 16px;
-    line-height: 1.75;
-    margin: 0 0 20px;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0 0 24px;
+    color: #222;
   }
 
   .m-buttons {
@@ -658,84 +669,98 @@ img {
   }
 
   .m-buttons button {
-    padding: 12px 22px;
+    padding: 13px 22px;
     font-size: 14px;
   }
 
   .m-products {
-    padding: 42px 14px;
+    padding: 52px 16px;
     text-align: center;
   }
 
   .m-products h2 {
-    font-size: 22px;
-    margin: 0 0 28px;
+    font-size: 24px;
+    margin: 0 0 32px;
   }
 
   .m-products-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
+    gap: 16px;
   }
 
   .m-product {
     background: #fafafa;
-    padding: 18px 10px;
-    min-height: 275px;
+    padding: 22px 12px;
+    min-height: 350px;
   }
 
   .m-product img {
-    height: 155px;
     width: 100%;
+    height: 190px;
     object-fit: contain;
   }
 
   .m-product h3 {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
-    margin: 10px 0 6px;
+    margin: 14px 0 8px;
+    line-height: 1.35;
   }
 
   .m-stars {
-    font-size: 16px;
+    font-size: 17px;
     direction: ltr;
+    margin-bottom: 4px;
   }
 
   .m-price {
     color: #b69a63;
-    font-size: 13px;
+    font-size: 14px;
+  }
+
+  .m-study {
+    background: #fff;
   }
 
   .m-study > img {
     width: 100%;
-    height: 330px;
+    height: 360px;
     object-fit: cover;
+    display: block;
   }
 
   .m-study-text {
-    padding: 34px 22px;
+    padding: 48px 28px;
     text-align: right;
   }
 
   .m-study h2 {
-    font-size: 31px;
+    font-size: 35px;
     line-height: 1.2;
-    margin: 0 0 14px;
+    margin: 0 0 18px;
+    font-weight: 900;
   }
 
   .m-study p {
-    font-size: 16px;
-    line-height: 1.75;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0 0 24px;
+  }
+
+  .m-study button {
+    font-size: 14px;
+    padding: 13px 22px;
   }
 
   .m-banners {
     display: grid;
-    gap: 16px;
-    padding: 18px 14px 34px;
+    gap: 18px;
+    padding: 20px 16px 44px;
   }
 
   .m-banner {
-    height: 245px;
+    height: 280px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -746,18 +771,18 @@ img {
   .m-banner div {
     width: 86%;
     background: #fff;
-    padding: 14px 18px;
+    padding: 16px 20px;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 800;
   }
 
   .m-member {
-    min-height: 440px;
+    min-height: 520px;
     background-image: url('/images/home/members.jpg');
     background-size: cover;
     background-position: center;
-    padding: 36px 16px;
+    padding: 42px 18px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -765,91 +790,102 @@ img {
 
   .m-member > div {
     width: 92%;
-    min-height: 260px;
+    min-height: 330px;
     background: rgba(180, 158, 110, 0.62);
     color: #fff;
     text-align: center;
-    padding: 42px 24px;
+    padding: 56px 30px;
   }
 
   .m-member h2 {
-    font-size: 29px;
+    font-size: 32px;
     line-height: 1.2;
+    margin: 0 0 16px;
   }
 
   .m-member p {
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 22px;
   }
 
   .m-member button {
     background: #fff;
     color: #000;
+    font-size: 14px;
   }
 
   .m-newsletter {
     background: #fbf8f2;
-    padding: 40px 18px;
+    padding: 48px 20px;
     text-align: center;
   }
 
   .m-newsletter h2 {
-    font-size: 24px;
+    font-size: 26px;
+    margin: 0 0 14px;
   }
 
   .m-newsletter p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.8;
+    margin: 0 0 24px;
   }
 
   .m-newsletter form {
     display: grid;
-    gap: 10px;
+    gap: 12px;
   }
 
   .m-newsletter input {
-    height: 44px;
+    height: 48px;
     border: 1px solid #aaa;
-    padding: 0 12px;
+    padding: 0 14px;
     text-align: right;
+    font-family: inherit;
   }
 
   .m-newsletter button {
-    height: 44px;
+    height: 48px;
+    font-size: 14px;
   }
 
   .m-blog {
-    padding: 42px 16px;
+    padding: 52px 18px;
   }
 
   .m-blog h2 {
     text-align: center;
-    font-size: 23px;
+    font-size: 26px;
+    margin: 0 0 22px;
   }
 
   .m-blog-main {
     width: 100%;
-    height: 320px;
+    height: 380px;
     object-fit: cover;
-    margin-bottom: 26px;
+    margin-bottom: 32px;
   }
 
   .m-post {
     display: grid;
-    grid-template-columns: 125px 1fr;
-    gap: 14px;
-    margin-bottom: 20px;
+    grid-template-columns: 140px 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
     align-items: center;
   }
 
   .m-post img {
-    width: 125px;
-    height: 125px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
   }
 
   .m-post h3 {
-    font-size: 15px;
+    font-size: 16px;
     margin: 0 0 8px;
+    line-height: 1.45;
+    font-weight: 500;
   }
 
   .m-post span {
@@ -858,14 +894,15 @@ img {
   }
 
   .m-instagram {
-    padding: 36px 0 44px;
+    padding: 42px 0 54px;
     text-align: center;
   }
 
   .m-instagram h2 {
     font-size: 14px;
     direction: ltr;
-    margin-bottom: 14px;
+    margin: 0 0 16px;
+    font-weight: 800;
   }
 
   .m-instagram > div {
@@ -875,53 +912,67 @@ img {
 
   .m-instagram img {
     width: 100%;
-    height: 230px;
+    height: 250px;
     object-fit: cover;
+    display: block;
     border-left: 5px solid rgb(187 166 109);
   }
 
   .m-cards {
     display: grid;
-    gap: 22px;
-    padding: 34px 16px 54px;
+    gap: 26px;
+    padding: 42px 18px 64px;
+    background: #fff;
   }
 
   .m-cards article {
     border: 1px solid #ddd;
-    padding: 18px;
+    padding: 24px;
     text-align: center;
+    background: #fff;
   }
 
   .m-cards img {
     width: 100%;
-    height: 255px;
+    height: 320px;
     object-fit: cover;
+    margin-bottom: 20px;
   }
 
   .m-cards h3 {
-    font-size: 19px;
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 0 0 14px;
+    font-weight: 800;
   }
 
   .m-cards p {
-    font-size: 15px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 20px;
   }
 
   .m-cards button {
     background: #fff;
     color: #000;
     border: 1px solid #000;
+    padding: 12px 24px;
+    font-size: 14px;
   }
 
   .footer {
-    padding: 42px 24px;
+    padding: 48px 24px;
     text-align: center;
   }
 
   .footer-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 28px;
+  }
+
+  .footer p,
+  .footer a {
+    font-size: 14px;
   }
 }
-

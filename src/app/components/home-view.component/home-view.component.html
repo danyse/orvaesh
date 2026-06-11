@@ -283,19 +283,134 @@
   <!-- ICI TU COLLES LE BLOC MOBILE
        QUE NOUS AVONS CONSTRUIT -->
 
-  <main class="mobile-page">
+ <main class="mobile-page">
+  <section class="m-hero">
+    <img src="/images/home/hero.jpg" alt="">
 
-    <!-- ton bloc m-hero -->
-    <!-- ton bloc m-products -->
-    <!-- ton bloc m-study -->
-    <!-- ton bloc m-banners -->
-    <!-- ton bloc m-member -->
-    <!-- ton bloc m-newsletter -->
-    <!-- ton bloc m-blog -->
-    <!-- ton bloc m-instagram -->
-    <!-- ton bloc m-cards -->
+    <div class="m-hero-text">
+      <div class="m-small">יאלי הוד</div>
 
-  </main>
+      <h1>חומרי גלם לקוסמטיקה ורוקחות טבעית</h1>
+
+      <p>
+        החנות שלך לחומרי גלם מובחרים, טבעיים, אורגניים ופעילים לעוסקים
+        בקוסמטיקה, רוקחות טבעית וארומתרפיה.
+      </p>
+
+      <div class="m-buttons">
+        <button>חומרי גלם</button>
+        <button>סדנאות וקורסים</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="m-products">
+    <h2>מוצרים מומלצים</h2>
+
+    <div class="m-products-grid">
+      <article class="m-product" *ngFor="let product of products">
+        <img [src]="product.image" [alt]="product.name">
+
+        <h3>{{ product.name }}</h3>
+
+        <div class="m-stars">★★★★★</div>
+
+        <div class="m-price">
+          החל מ {{ product.price }}
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="m-study">
+    <img src="/images/home/hero.jpg" alt="">
+
+    <div class="m-study-text">
+      <div class="m-small">קוסמטיקה טבעית מתקדמת</div>
+
+      <h2>מרכז הדרכה ולימודים מקצועי</h2>
+
+      <p>
+        סקרנית להכיר את עולם הקוסמטיקה הטבעית? זה המקום בשבילך ללמוד,
+        להעשיר ולהתפתח עם מגוון הקורסים והסדנאות.
+      </p>
+
+      <button>לצפייה במגוון אפשרויות הלימוד</button>
+    </div>
+  </section>
+
+  <section class="m-banners">
+    <div class="m-banner banner-one">
+      <div>קורס רוקחות טבעית מעשית וסודות</div>
+    </div>
+
+    <div class="m-banner banner-two">
+      <div>מחפשת רעיון מדליק לערב בנות?</div>
+    </div>
+  </section>
+
+  <section class="m-member">
+    <div>
+      <h2>מועדון התוכן למנויים של יאלי הוד</h2>
+
+      <p>תוכן מקצועי וייחודי / מפגשי זום חודשיים / הטבות לחברים</p>
+
+      <button>להצטרפות לחצי כאן</button>
+    </div>
+  </section>
+
+  <section class="m-newsletter">
+    <h2>חדש/ה אצלנו?</h2>
+
+    <p>
+      נרשמים לרשימת הדיוור שלנו ומקבלים עדכונים מיוחדים,
+      מתכונים והטבות לפני כולם!
+    </p>
+
+    <form>
+      <input type="email" placeholder="הזן דואר אלקטרוני">
+
+      <button type="button">הרשמה</button>
+    </form>
+  </section>
+
+  <section class="m-blog">
+    <h2>הבלוג שלנו</h2>
+
+    <img class="m-blog-main" src="/images/home/blog-main.jpg" alt="">
+
+    <article class="m-post" *ngFor="let post of posts">
+      <img [src]="post.image" [alt]="post.title">
+
+      <div>
+        <h3>{{ post.title }}</h3>
+        <span>אפר 28, 2026</span>
+      </div>
+    </article>
+  </section>
+
+  <section class="m-instagram">
+    <h2>FOLLOW US ON INSTAGRAM &#64;YALI_HOD</h2>
+
+    <div>
+      <img *ngFor="let image of instagram" [src]="image" alt="">
+    </div>
+  </section>
+
+  <section class="m-cards">
+    <article *ngFor="let card of cards">
+      <img [src]="card.image" [alt]="card.title">
+
+      <h3>{{ card.title }}</h3>
+
+      <p>
+        הכירי את עולם חומרי הגלם והקורסים המקצועיים שלנו בצורה פשוטה.
+      </p>
+
+      <button>{{ card.button }}</button>
+    </article>
+  </section>
+</main>
 
   <footer class="footer">
 
