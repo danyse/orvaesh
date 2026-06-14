@@ -401,8 +401,20 @@
 <section class="m-instagram">
   <h2>FOLLOW US ON INSTAGRAM &#64;YALI_HOD</h2>
 
-  <div class="m-instagram-slider">
-    <img *ngFor="let image of instagram" [src]="image" alt="">
+  <div class="m-instagram-wrap">
+
+ 
+   <button class="m-insta-arrow m-insta-next" type="button" aria-label="Next"></button>
+
+    <div class="m-instagram-slider">
+      <img
+        *ngFor="let image of instagram"
+        [attr.src]="image"
+        alt="">
+    </div>
+
+ <button class="m-insta-arrow m-insta-prev" type="button" aria-label="Previous"></button>
+
   </div>
 </section>
 
