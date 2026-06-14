@@ -74,7 +74,7 @@
       </div>
 
       <div class="hero-image">
-        <img src="/images/home/hero.jpg" alt="">
+        <img src="/images/home/19.jpg" alt="">
       </div>
     </section>
 
@@ -127,7 +127,7 @@
       </div>
 
       <div class="study-image">
-        <img src="/images/home/hero.jpg" alt="">
+        <img src="/images/home/20.jpg" alt="">
       </div>
 
     </section>
@@ -220,7 +220,7 @@
         <h2>הבלוג שלנו</h2>
 
         <img
-          src="/images/home/blog-main.jpg"
+          src="/images/home/21.jpg"
           alt="">
 
       </div>
@@ -286,7 +286,7 @@
 <main class="mobile-page">
 
   <section class="m-hero">
-    <img src="/images/home/hero.jpg" alt="">
+    <img src="/images/home/17.jpg" alt="">
 
     <div class="m-hero-text">
       <div class="m-small">יאלי הוד</div>
@@ -344,7 +344,7 @@
     </div>
 
     <div class="study-image">
-      <img src="/images/home/hero.jpg" alt="">
+      <img src="/images/home/23.jpg" alt="">
     </div>
   </section>
 
@@ -386,7 +386,7 @@
   <section class="m-blog">
     <h2>הבלוג שלנו</h2>
 
-    <img class="m-blog-main" src="/images/home/blog-main.jpg" alt="">
+    <img class="m-blog-main" src="/images/home/18.jpg" alt="">
 
     <article class="m-post" *ngFor="let post of posts">
       <img [src]="post.image" [alt]="post.title">
@@ -403,21 +403,29 @@
 
   <div class="m-instagram-wrap">
 
- 
-   <button class="m-insta-arrow m-insta-next" type="button" aria-label="Next"></button>
+    <button
+      class="m-insta-arrow m-insta-next"
+      type="button"
+      aria-label="Next"
+      (click)="slideInstagram('prev')">
+    </button>
 
-    <div class="m-instagram-slider">
+    <div class="m-instagram-slider" #instagramSlider>
       <img
         *ngFor="let image of instagram"
         [attr.src]="image"
         alt="">
     </div>
 
- <button class="m-insta-arrow m-insta-prev" type="button" aria-label="Previous"></button>
+    <button
+      class="m-insta-arrow m-insta-prev"
+      type="button"
+      aria-label="Previous"
+      (click)="slideInstagram('next')">
+    </button>
 
   </div>
 </section>
-
   <section class="m-cards">
     <article *ngFor="let card of cards">
       <img [src]="card.image" [alt]="card.title">
@@ -464,7 +472,7 @@
       <div>
         <h4>יצירת קשר</h4>
 
-        <p>054-3240140</p>
+        <p>054-2208881</p>
       </div>
 
     </div>
