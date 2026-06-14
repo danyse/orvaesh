@@ -283,7 +283,8 @@
   <!-- ICI TU COLLES LE BLOC MOBILE
        QUE NOUS AVONS CONSTRUIT -->
 
- <main class="mobile-page">
+<main class="mobile-page">
+
   <section class="m-hero">
     <img src="/images/home/hero.jpg" alt="">
 
@@ -322,20 +323,28 @@
     </div>
   </section>
 
-  <section class="m-study">
-    <img src="/images/home/hero.jpg" alt="">
+  <section class="study-section mobile-study">
+    <div class="study-text">
+      <div class="small-title">
+        קוסמטיקה טבעית מתקדמת
+      </div>
 
-    <div class="m-study-text">
-      <div class="m-small">קוסמטיקה טבעית מתקדמת</div>
-
-      <h2>מרכז הדרכה ולימודים מקצועי</h2>
+      <h2>
+        מרכז הדרכה ולימודים מקצועי
+      </h2>
 
       <p>
-        סקרנית להכיר את עולם הקוסמטיקה הטבעית? זה המקום בשבילך ללמוד,
-        להעשיר ולהתפתח עם מגוון הקורסים והסדנאות.
+        סקרנית להכיר את עולם הקוסמטיקה הטבעית?
+        זה המקום בשבילך ללמוד ולהתפתח.
       </p>
 
-      <button>לצפייה במגוון אפשרויות הלימוד</button>
+      <button>
+        לצפייה במגוון אפשרויות הלימוד
+      </button>
+    </div>
+
+    <div class="study-image">
+      <img src="/images/home/hero.jpg" alt="">
     </div>
   </section>
 
@@ -389,13 +398,13 @@
     </article>
   </section>
 
-  <section class="m-instagram">
-    <h2>FOLLOW US ON INSTAGRAM &#64;YALI_HOD</h2>
+<section class="m-instagram">
+  <h2>FOLLOW US ON INSTAGRAM &#64;YALI_HOD</h2>
 
-    <div>
-      <img *ngFor="let image of instagram" [src]="image" alt="">
-    </div>
-  </section>
+  <div class="m-instagram-slider">
+    <img *ngFor="let image of instagram" [src]="image" alt="">
+  </div>
+</section>
 
   <section class="m-cards">
     <article *ngFor="let card of cards">
@@ -410,6 +419,7 @@
       <button>{{ card.button }}</button>
     </article>
   </section>
+
 </main>
 
   <footer class="footer">
