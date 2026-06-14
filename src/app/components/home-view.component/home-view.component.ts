@@ -23,8 +23,8 @@ slideInstagram(direction: 'next' | 'prev') {
   });
 }
   products = [
-    { name: 'הידרוסול - מי ורדים', price: '₪44.00', reviews: 22, image: '/images/home/1.jpg' },
-    { name: 'חומצה היאלורונית ננו', price: '₪164.00', reviews: 29, image: '/images/home/2.jpg' },
+    { name: 'הידרוסול - מי ורדים', price: '₪44.00', reviews: 22, image: '/images/home/13.jpg' },
+    { name: 'חומצה היאלורונית ננו', price: '₪164.00', reviews: 29, image: '/images/home/9.jpg' },
     { name: 'תמצית CO2 גרגרים', price: '₪90.00', reviews: 16, image: '/images/home/3.jpg' },
     { name: 'Citron oil - שמן אתרוגים', price: '₪54.00', reviews: 22, image: '/images/home/4.jpg' },
     { name: 'HYALURONIC ACID', price: '₪95.00', reviews: 52, image: '/images/home/5.jpg' }
