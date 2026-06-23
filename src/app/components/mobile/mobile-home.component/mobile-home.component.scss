@@ -22,7 +22,9 @@
     linear-gradient(180deg, var(--orv-cream-light) 0%, var(--orv-cream) 100%);
   color: var(--orv-green-dark);
   overflow-x: hidden;
+  
 }
+
 
 .m-top-strip {
   height: 43px;
@@ -1404,3 +1406,2200 @@
 }
 
 
+
+
+/* =========================
+   ORVAESH MOBILE V5 CLEAN
+   Mobile only / 1 colonne / menu plein écran
+   ========================= */
+
+.m-page {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.m-top-strip {
+  min-height: 44px;
+  height: auto;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.m-header {
+  height: 70px;
+  padding: 0 14px;
+  grid-template-columns: 48px minmax(0, 1fr) 48px;
+}
+
+.m-header-icon {
+  width: 46px;
+  height: 46px;
+}
+
+.m-logo-title {
+  font-size: 23px;
+  letter-spacing: 2.5px;
+  gap: 4px;
+}
+
+.m-logo-leaf {
+  width: 27px;
+  height: 27px;
+}
+
+.m-logo-subtitle {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.m-search-wrap {
+  padding: 12px 14px 16px;
+}
+
+.m-search {
+  height: 54px;
+}
+
+.m-search input {
+  font-size: 16px;
+  text-align: right;
+}
+
+.m-full-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(57, 74, 35, 0.34);
+  transition: opacity 0.22s ease, visibility 0.22s ease;
+}
+
+.m-full-menu.is-open {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.m-full-menu-panel {
+  min-height: 100vh;
+  padding: 22px 20px 120px;
+  background:
+    radial-gradient(circle at top right, rgba(183, 140, 69, 0.18), transparent 280px),
+    linear-gradient(180deg, var(--orv-cream-light) 0%, var(--orv-cream) 100%);
+  transform: translateY(-18px);
+  transition: transform 0.22s ease;
+  overflow-y: auto;
+}
+
+.m-full-menu.is-open .m-full-menu-panel {
+  transform: translateY(0);
+}
+
+.m-full-menu-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(57, 74, 35, 0.14);
+}
+
+.m-full-menu-head strong {
+  display: block;
+  color: var(--orv-green-dark);
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+.m-full-menu-head span {
+  display: block;
+  margin-top: 8px;
+  color: var(--orv-text-soft);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.m-full-menu-close {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(57, 74, 35, 0.18);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--orv-green-dark);
+  font-family: inherit;
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 300;
+}
+
+.m-full-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 28px 0;
+}
+
+.m-full-menu-links a {
+  min-height: 58px;
+  padding: 0 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(57, 74, 35, 0.12);
+  box-shadow: 0 10px 24px rgba(89, 73, 52, 0.07);
+  color: var(--orv-green-dark);
+  font-size: 21px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.m-full-menu-links a::before {
+  content: '←';
+  color: var(--orv-green);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.m-full-menu-cta {
+  width: 100%;
+  height: 58px;
+  border: none;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: var(--orv-green);
+  color: #fff;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 900;
+  box-shadow: 0 16px 32px rgba(57, 74, 35, 0.22);
+}
+
+.m-hero {
+  height: auto;
+  min-height: 430px;
+  margin: 0 14px;
+  border-radius: 26px;
+  background-position: center top;
+}
+
+.m-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(252, 250, 246, 0.16) 0%, rgba(252, 250, 246, 0.72) 58%, rgba(252, 250, 246, 0.94) 100%);
+}
+
+.m-hero-copy {
+  left: 18px;
+  right: 18px;
+  top: auto;
+  bottom: 28px;
+  width: auto;
+  transform: none;
+  text-align: right;
+}
+
+.m-hero h1 {
+  font-size: 32px;
+  line-height: 1.18;
+}
+
+.m-hero p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.m-hero button,
+.m-promo button,
+.m-newsletter button {
+  min-height: 50px;
+  font-size: 16px;
+}
+
+.m-categories,
+.m-product-grid,
+.m-health-grid,
+.m-article-row,
+.m-benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  overflow: visible;
+}
+
+/* ORVAESH MOBILE V5 BENEFITS CARDS FINAL */
+.m-benefits {
+  margin: 30px 14px 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.m-benefits article {
+  min-height: 82px;
+  padding: 13px 14px;
+  border: 1px solid rgba(143, 112, 75, 0.18);
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.84), transparent 78px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(247, 242, 232, 0.92));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.82),
+    0 12px 26px rgba(89, 73, 52, 0.09);
+}
+
+.m-benefits article:not(:last-child)::after {
+  display: none;
+}
+
+.m-benefit-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 34% 24%, rgba(255, 255, 255, 0.62), transparent 24px),
+    linear-gradient(180deg, rgba(127, 150, 88, 0.24), rgba(100, 124, 60, 0.13));
+  box-shadow: inset 0 0 0 1px rgba(57, 74, 35, 0.10);
+}
+
+.m-benefit-icon svg {
+  width: 34px;
+  height: 34px;
+  filter: none;
+}
+
+.m-benefits p {
+  margin: 0;
+  color: var(--orv-green-dark);
+  font-size: 18px;
+  line-height: 1.18;
+  font-weight: 900;
+  text-align: right;
+}
+
+.m-benefits .benefit-leaf,
+.m-benefits .benefit-fill,
+.m-benefits .benefit-box,
+.m-benefits .benefit-line,
+.m-benefits .benefit-wheel {
+  stroke: var(--orv-green-dark);
+}
+
+/* ORVAESH MOBILE V5 TALLER IMAGES FINAL */
+.m-hero {
+  min-height: 520px;
+}
+
+.m-promo {
+  min-height: 300px;
+}
+
+.m-product-card {
+  height: 520px;
+  min-height: 520px;
+}
+
+.m-product-card img {
+  height: 100%;
+}
+
+.m-health-grid article {
+  height: 380px;
+  min-height: 380px;
+}
+
+.m-health-grid img {
+  height: 380px;
+}
+
+.m-article-row article {
+  height: auto;
+  min-height: 430px;
+}
+
+.m-article-row img {
+  height: 330px;
+}
+
+/* ORVAESH MOBILE V5 SECTION TEXT BREAKS FINAL */
+.m-section-story {
+  position: relative;
+  overflow: hidden;
+  margin: 28px 14px 0;
+  padding: 26px 22px 28px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 12% 14%, rgba(255, 255, 255, 0.82), transparent 98px),
+    radial-gradient(circle at 90% 90%, rgba(127, 150, 88, 0.12), transparent 112px),
+    linear-gradient(180deg, rgba(252, 250, 246, 0.92), rgba(247, 242, 232, 0.78));
+  border: 1px solid rgba(143, 112, 75, 0.16);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.84),
+    0 12px 28px rgba(89, 73, 52, 0.08);
+  text-align: right;
+}
+
+.m-section-story::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 0;
+  width: 5px;
+  height: calc(100% - 48px);
+  border-radius: 999px 0 0 999px;
+  background: linear-gradient(180deg, var(--orv-green-soft), var(--orv-green));
+}
+
+.m-section-story span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  background: rgba(100, 124, 60, 0.12);
+  color: var(--orv-green);
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.m-section-story h2 {
+  margin: 0 0 10px;
+  color: var(--orv-green-dark);
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 900;
+}
+
+.m-section-story p {
+  margin: 0;
+  color: rgba(57, 74, 35, 0.78);
+  font-size: 16.5px;
+  line-height: 1.58;
+  font-weight: 700;
+}
+
+/* ORVAESH MOBILE V5 HEALTH TITLE RIGHT FINAL */
+.m-health-head {
+  justify-content: flex-end;
+  direction: rtl;
+}
+
+.m-health-head h2,
+.m-health-head .products-title {
+  margin-right: 0;
+  margin-left: auto;
+  justify-self: end;
+  text-align: right;
+  direction: ltr;
+}
+
+/* ORVAESH MOBILE V5 PORTRAIT IMAGES REAL FINAL */
+.m-hero {
+  min-height: 590px;
+  background: url('/images/home/8.jpg');
+  background-size: cover;
+  background-position: center 34%;
+}
+
+.m-hero::after {
+  background: rgba(252, 250, 246, 0.18);
+}
+
+.m-hero-copy {
+  right: 18px;
+  left: 18px;
+  bottom: 24px;
+  padding: 22px 20px 24px;
+  border-radius: 26px;
+  background: rgba(252, 250, 246, 0.84);
+  border: 1px solid rgba(143, 112, 75, 0.18);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 14px 32px rgba(89, 73, 52, 0.12);
+}
+
+.m-product-grid {
+  gap: 24px;
+}
+
+.m-product-card {
+  height: 660px;
+  min-height: 660px;
+  border-radius: 32px;
+}
+
+.m-product-card img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-glass {
+  right: 18px;
+  left: 18px;
+  bottom: 18px;
+  width: auto;
+  min-height: 118px;
+  border-radius: 26px;
+}
+
+.m-health-grid {
+  gap: 24px;
+}
+
+.m-health-grid article {
+  height: 560px;
+  min-height: 560px;
+  border-radius: 30px;
+}
+
+.m-health-grid img {
+  height: 560px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.m-health-grid span {
+  right: 22px;
+  left: 22px;
+  bottom: 22px;
+  height: 46px;
+  font-size: 22px;
+  border-radius: 999px;
+}
+
+.m-article-row {
+  gap: 24px;
+}
+
+.m-article-row article {
+  min-height: 560px;
+  border-radius: 30px;
+}
+
+.m-article-row img {
+  height: 455px;
+  object-fit: cover;
+}
+
+/* ORVAESH MOBILE V5 LARGER FONTS TRUE FINAL */
+.m-top-strip {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.m-logo-title {
+  font-size: 27px;
+}
+
+.m-logo-subtitle {
+  font-size: 14px;
+}
+
+.m-search input {
+  font-size: 18px;
+}
+
+.m-hero h1 {
+  font-size: 38px;
+  line-height: 1.12;
+}
+
+.m-hero p {
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.m-hero button,
+.m-promo button,
+.m-newsletter button {
+  font-size: 18px;
+}
+
+.m-promo h2,
+.m-promo-copy h2 {
+  font-size: 36px;
+  line-height: 1.12;
+}
+
+.m-promo p,
+.m-promo-copy p {
+  font-size: 21px;
+}
+
+.m-section-head h2,
+.products-title {
+  font-size: 31px;
+  line-height: 1.12;
+}
+
+.m-section-head a {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.section-leaf-svg {
+  width: 44px;
+  height: 44px;
+  flex-basis: 44px;
+}
+
+.product-glass h3 {
+  font-size: 30px;
+  line-height: 1.12;
+}
+
+.product-glass p {
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.product-glass strong {
+  font-size: 29px;
+}
+
+.rate {
+  font-size: 15px;
+}
+
+.heart {
+  font-size: 25px;
+}
+
+.m-health-grid span {
+  height: 56px;
+  font-size: 26px;
+  line-height: 1.1;
+}
+
+.m-article-row p {
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.m-section-story span {
+  font-size: 15px;
+}
+
+.m-section-story h2 {
+  font-size: 31px;
+  line-height: 1.14;
+}
+
+.m-section-story p {
+  font-size: 19px;
+  line-height: 1.58;
+}
+
+.m-newsletter h2,
+.m-newsletter-content h2 {
+  font-size: 34px;
+  line-height: 1.14;
+}
+
+.m-newsletter p,
+.m-newsletter-content p {
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.m-newsletter input {
+  font-size: 17px;
+}
+
+.m-benefits p {
+  font-size: 20px;
+  line-height: 1.22;
+}
+
+.m-menu-welcome h2 {
+  font-size: 29px;
+}
+
+.m-menu-welcome p {
+  font-size: 16px;
+}
+
+.m-menu-card-text strong {
+  font-size: 22px;
+}
+
+.m-menu-card-text small {
+  font-size: 15px;
+}
+
+.m-menu-quick-actions button {
+  font-size: 16px;
+}
+
+.m-full-menu-cta {
+  font-size: 20px;
+}
+
+.m-footer-lite-logo {
+  font-size: 31px;
+}
+
+.m-footer-lite-tagline,
+.m-footer-lite-links a {
+  font-size: 15px;
+}
+
+.m-footer-lite small {
+  font-size: 13px;
+}
+
+.m-bottom-item {
+  font-size: 12px;
+}
+
+/* ORVAESH MOBILE V5 FONTS XL REAL FINAL */
+.m-page {
+  font-size: 18px;
+}
+
+.m-top-strip {
+  font-size: 18px;
+}
+
+.m-logo-title {
+  font-size: 30px;
+}
+
+.m-logo-subtitle {
+  font-size: 15px;
+}
+
+.m-search input {
+  font-size: 20px;
+}
+
+.m-hero h1 {
+  font-size: 42px;
+  line-height: 1.1;
+}
+
+.m-hero p {
+  font-size: 22px;
+}
+
+.m-hero button,
+.m-promo button,
+.m-newsletter button {
+  font-size: 20px;
+}
+
+.m-promo h2,
+.m-promo-copy h2 {
+  font-size: 40px;
+}
+
+.m-promo p,
+.m-promo-copy p {
+  font-size: 23px;
+}
+
+.m-section-head h2,
+.m-section-head .products-title,
+.products-title,
+.section-title-text {
+  font-size: 36px;
+  line-height: 1.08;
+  font-weight: 900;
+}
+
+.m-section-head a {
+  font-size: 18px;
+}
+
+.section-leaf-svg {
+  width: 50px;
+  height: 50px;
+  flex-basis: 50px;
+}
+
+.m-product-card .product-glass h3,
+.product-glass h3 {
+  font-size: 36px;
+  line-height: 1.08;
+}
+
+.m-product-card .product-glass p,
+.product-glass p {
+  font-size: 22px;
+  line-height: 1.34;
+}
+
+.m-product-card .product-glass strong,
+.product-glass strong {
+  font-size: 34px;
+}
+
+.m-product-card .rate,
+.rate {
+  font-size: 17px;
+}
+
+.m-product-card .heart,
+.heart {
+  font-size: 28px;
+}
+
+.m-health-grid span {
+  height: 64px;
+  font-size: 30px;
+}
+
+.m-article-row p {
+  font-size: 25px;
+}
+
+.m-section-story span {
+  font-size: 17px;
+}
+
+.m-section-story h2 {
+  font-size: 35px;
+  line-height: 1.12;
+}
+
+.m-section-story p {
+  font-size: 21px;
+}
+
+.m-newsletter h2,
+.m-newsletter-content h2 {
+  font-size: 38px;
+}
+
+.m-newsletter p,
+.m-newsletter-content p {
+  font-size: 21px;
+}
+
+.m-newsletter input {
+  font-size: 19px;
+}
+
+.m-benefits p {
+  font-size: 23px;
+}
+
+.m-menu-welcome h2 {
+  font-size: 32px;
+}
+
+.m-menu-welcome p {
+  font-size: 18px;
+}
+
+.m-menu-card-text strong {
+  font-size: 25px;
+}
+
+.m-menu-card-text small {
+  font-size: 17px;
+}
+
+.m-menu-quick-actions button {
+  font-size: 18px;
+}
+
+.m-full-menu-cta {
+  font-size: 22px;
+}
+
+.m-footer-lite-logo {
+  font-size: 34px;
+}
+
+.m-footer-lite-tagline,
+.m-footer-lite-links a {
+  font-size: 17px;
+}
+
+.m-footer-lite small {
+  font-size: 15px;
+}
+
+.m-bottom-item {
+  font-size: 13px;
+}
+
+/* ORVAESH MOBILE V5 POPULAR SECTION XXL TRUE FINAL */
+.m-section:has(.m-article-row) .m-section-head {
+  min-height: 64px;
+  margin-bottom: 22px;
+}
+
+.m-section:has(.m-article-row) .products-title,
+.m-section:has(.m-article-row) .section-title-text {
+  font-size: 44px;
+  line-height: 1.04;
+  font-weight: 950;
+}
+
+.m-section:has(.m-article-row) .section-leaf-svg {
+  width: 58px;
+  height: 58px;
+  flex-basis: 58px;
+}
+
+.m-section:has(.m-article-row) .m-section-head a {
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 950;
+}
+
+.m-article-row article {
+  min-height: 620px;
+  border-radius: 32px;
+}
+
+.m-article-row img {
+  height: 490px;
+}
+
+.m-article-row p {
+  min-height: 130px;
+  padding: 28px 28px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--orv-green-dark);
+  font-size: 36px;
+  line-height: 1.14;
+  font-weight: 950;
+  text-align: right;
+}
+
+/* ORVAESH MOBILE V5 POPULAR SECTION XXL FINAL */
+.m-section:has(.m-article-row) .m-section-head {
+  min-height: 64px;
+  margin-bottom: 22px;
+}
+
+.m-section:has(.m-article-row) .products-title,
+.m-section:has(.m-article-row) .section-title-text {
+  font-size: 44px;
+  line-height: 1.04;
+  font-weight: 950;
+}
+
+.m-section:has(.m-article-row) .section-leaf-svg {
+  width: 58px;
+  height: 58px;
+  flex-basis: 58px;
+}
+
+.m-section:has(.m-article-row) .m-section-head a {
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 950;
+}
+
+.m-article-row article {
+  min-height: 620px;
+  border-radius: 32px;
+}
+
+.m-article-row img {
+  height: 490px;
+}
+
+.m-article-row p {
+  min-height: 130px;
+  padding: 28px 28px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--orv-green-dark);
+  font-size: 36px;
+  line-height: 1.14;
+  font-weight: 950;
+  text-align: right;
+}
+
+/* ORVAESH MOBILE V5 TALLER IMAGES */
+.m-hero {
+  min-height: 520px;
+}
+
+.m-promo {
+  min-height: 300px;
+}
+
+.m-product-card {
+  height: 520px;
+  min-height: 520px;
+}
+
+.m-product-card img {
+  height: 100%;
+}
+
+.m-health-grid article {
+  height: 380px;
+  min-height: 380px;
+}
+
+.m-health-grid img {
+  height: 380px;
+}
+
+.m-article-row article {
+  height: auto;
+  min-height: 430px;
+}
+
+.m-article-row img {
+  height: 330px;
+}
+
+/* ORVAESH MOBILE V5 MENU CARDS */
+.m-full-menu {
+  z-index: 1200;
+  background:
+    radial-gradient(circle at 80% 4%, rgba(183, 140, 69, 0.20), transparent 210px),
+    rgba(31, 44, 20, 0.38);
+}
+
+.m-full-menu-panel {
+  width: 100%;
+  min-height: 100dvh;
+  padding: 18px 16px 118px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(183, 140, 69, 0.22), transparent 210px),
+    radial-gradient(circle at 0% 18%, rgba(100, 124, 60, 0.16), transparent 190px),
+    linear-gradient(180deg, #fcfaf6 0%, #f7f2e8 100%);
+  box-shadow: none;
+}
+
+.m-full-menu-head {
+  padding: 0 0 14px;
+  border-bottom: none;
+}
+
+.m-full-menu-head strong {
+  font-size: 24px;
+  letter-spacing: 3.5px;
+}
+
+.m-full-menu-head span {
+  margin-top: 5px;
+  font-size: 12px;
+  color: rgba(57, 74, 35, 0.74);
+}
+
+.m-full-menu-close {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(57, 74, 35, 0.18);
+  background: rgba(255, 255, 255, 0.68);
+  box-shadow: 0 8px 18px rgba(89, 73, 52, 0.08);
+  font-size: 28px;
+}
+
+.m-menu-welcome {
+  position: relative;
+  overflow: hidden;
+  margin: 14px 0 16px;
+  min-height: 126px;
+  padding: 20px 20px 18px;
+  border-radius: 26px;
+  background:
+    linear-gradient(135deg, rgba(57, 74, 35, 0.92), rgba(100, 124, 60, 0.86)),
+    url('/images/home/19.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  box-shadow: 0 18px 38px rgba(57, 74, 35, 0.18);
+}
+
+.m-menu-welcome::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.22), transparent 78px),
+    linear-gradient(90deg, rgba(31, 44, 20, 0.20), rgba(31, 44, 20, 0.50));
+  pointer-events: none;
+}
+
+.m-menu-welcome > * {
+  position: relative;
+  z-index: 1;
+}
+
+.m-menu-welcome span {
+  display: inline-flex;
+  margin-bottom: 8px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.20);
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.m-menu-welcome h2 {
+  margin: 0 0 7px;
+  max-width: 300px;
+  font-size: 24px;
+  line-height: 1.14;
+  font-weight: 900;
+}
+
+.m-menu-welcome p {
+  margin: 0;
+  max-width: 280px;
+  font-size: 14px;
+  line-height: 1.45;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.m-menu-category-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.m-menu-card {
+  width: 100%;
+  min-height: 82px;
+  padding: 13px 14px;
+  border: 1px solid rgba(143, 112, 75, 0.18);
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.84), transparent 78px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(247, 242, 232, 0.92));
+  color: var(--orv-green-dark);
+  font-family: inherit;
+  text-align: right;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.82),
+    0 12px 26px rgba(89, 73, 52, 0.09);
+}
+
+.m-menu-card-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 34% 24%, rgba(255, 255, 255, 0.62), transparent 24px),
+    linear-gradient(180deg, rgba(127, 150, 88, 0.24), rgba(100, 124, 60, 0.13));
+  box-shadow: inset 0 0 0 1px rgba(57, 74, 35, 0.10);
+}
+
+.m-menu-card-icon svg {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: var(--orv-green-dark);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.m-menu-card-text {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.m-menu-card-text strong {
+  color: var(--orv-green-dark);
+  font-size: 19px;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+.m-menu-card-text small {
+  color: rgba(57, 74, 35, 0.66);
+  font-size: 13px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.m-menu-quick-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  margin: 16px 0;
+}
+
+.m-menu-quick-actions button {
+  min-height: 48px;
+  padding: 0 8px;
+  border: 1px solid rgba(57, 74, 35, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.62);
+  color: var(--orv-green-dark);
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.15;
+  font-weight: 900;
+  box-shadow: 0 9px 18px rgba(89, 73, 52, 0.06);
+}
+
+.m-full-menu-cta {
+  height: 58px;
+  margin-top: 4px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, var(--orv-green-soft) 0%, var(--orv-green) 100%);
+  box-shadow: 0 16px 30px rgba(57, 74, 35, 0.24);
+}
+
+.m-full-menu-links {
+  display: none;
+}
+
+.m-full-menu-links a::before {
+  content: none;
+}
+
+/* ORVAESH MOBILE V5 BENEFITS CARDS */
+.m-benefits {
+  margin: 30px 14px 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.m-benefits article {
+  min-height: 82px;
+  padding: 13px 14px;
+  border: 1px solid rgba(143, 112, 75, 0.18);
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.84), transparent 78px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(247, 242, 232, 0.92));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.82),
+    0 12px 26px rgba(89, 73, 52, 0.09);
+}
+
+.m-benefits article:not(:last-child)::after {
+  display: none;
+}
+
+.m-benefit-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 34% 24%, rgba(255, 255, 255, 0.62), transparent 24px),
+    linear-gradient(180deg, rgba(127, 150, 88, 0.24), rgba(100, 124, 60, 0.13));
+  box-shadow: inset 0 0 0 1px rgba(57, 74, 35, 0.10);
+}
+
+.m-benefit-icon svg {
+  width: 34px;
+  height: 34px;
+  filter: none;
+}
+
+.m-benefits p {
+  margin: 0;
+  color: var(--orv-green-dark);
+  font-size: 18px;
+  line-height: 1.18;
+  font-weight: 900;
+  text-align: right;
+}
+
+.m-benefits .benefit-leaf,
+.m-benefits .benefit-fill,
+.m-benefits .benefit-box,
+.m-benefits .benefit-line,
+.m-benefits .benefit-wheel {
+  stroke: var(--orv-green-dark);
+}
+
+.m-categories {
+  padding: 18px 14px 6px;
+}
+
+.m-categories article {
+  min-width: 0;
+  height: auto;
+}
+
+.m-category-icon {
+  min-height: 112px;
+  padding: 18px 20px;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 18px;
+  text-align: right;
+}
+
+.m-category-icon svg {
+  width: 58px;
+  height: 58px;
+}
+
+.m-category-icon span {
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.m-promo {
+  min-height: 230px;
+  margin: 22px 14px 0;
+  padding: 24px 20px;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 18px;
+}
+
+.m-promo-copy {
+  text-align: right;
+}
+
+.m-promo-copy h2,
+.m-promo h2 {
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.m-promo-copy p,
+.m-promo p {
+  font-size: 17px;
+}
+
+.m-section,
+.m-health-section {
+  margin: 28px 14px 0;
+}
+
+.m-section-head,
+.m-health-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.products-title {
+  font-size: 26px;
+  line-height: 1.15;
+}
+
+.section-leaf-svg {
+  width: 38px;
+  height: 38px;
+}
+
+.m-product-card {
+  width: 100%;
+  min-height: 430px;
+  border-radius: 28px;
+}
+
+.m-product-card img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-glass {
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  padding: 18px 18px 20px;
+  border-radius: 22px;
+}
+
+.product-glass h3 {
+  font-size: 24px;
+}
+
+.product-glass p {
+  font-size: 16px;
+}
+
+.product-glass strong {
+  font-size: 24px;
+}
+
+.m-product-card .heart,
+.m-product-card .cart,
+.m-health-heart,
+.m-health-go {
+  width: 46px;
+  height: 46px;
+}
+
+.m-health-grid article {
+  min-height: 260px;
+  border-radius: 28px;
+}
+
+.m-health-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.m-health-grid span {
+  right: 18px;
+  bottom: 18px;
+  font-size: 23px;
+}
+
+.m-article-row article {
+  min-width: 0;
+  border-radius: 26px;
+}
+
+.m-article-row img {
+  height: 230px;
+}
+
+.m-article-row p {
+  min-height: auto;
+  padding: 16px 18px 20px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.m-newsletter {
+  margin: 32px 14px 0;
+  min-height: 440px;
+  padding: 34px 20px;
+  border-radius: 30px;
+}
+
+.m-newsletter-content h2 {
+  font-size: 30px;
+  line-height: 1.16;
+}
+
+.m-newsletter-content p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.m-newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.m-newsletter input,
+.m-newsletter button {
+  width: 100%;
+  height: 54px;
+}
+
+.m-benefits {
+  margin: 28px 14px 0;
+  padding: 18px;
+  border-radius: 28px;
+}
+
+.m-benefits article {
+  min-height: 82px;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 16px;
+  padding: 14px 0;
+}
+
+.m-benefits article:not(:last-child)::after {
+  display: none;
+}
+
+.m-benefit-icon {
+  width: 54px;
+  height: 54px;
+}
+
+.m-benefits p {
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.m-footer-lite {
+  margin: 30px 14px 0;
+  padding-bottom: 24px;
+}
+.m-categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  padding: 18px 14px 6px;
+}
+
+.m-categories article {
+  width: 100%;
+  min-width: 0;
+}
+
+.m-category-icon {
+  width: 100%;
+  height: auto;
+  min-height: 92px;
+  margin: 0;
+  padding: 18px 22px;
+  border-radius: 26px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+}
+
+.m-category-icon svg {
+  width: 54px;
+  height: 54px;
+}
+
+.m-category-icon span {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: right;
+}
+
+/* ORVAESH MOBILE V5 CLEAN FINAL */
+.m-categories {
+  display: none;
+}
+
+.m-full-menu {
+  z-index: 1000;
+}
+
+.m-full-menu-panel {
+  width: 100%;
+  min-height: 100dvh;
+  padding: 22px 20px 120px;
+}
+
+.m-full-menu-links {
+  gap: 12px;
+  padding: 26px 0;
+}
+
+.m-full-menu-links a {
+  min-height: 62px;
+  padding: 0 22px;
+  border-radius: 22px;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.m-product-grid,
+.m-health-grid,
+.m-article-row,
+.m-benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  overflow: visible;
+}
+/* ORVAESH MOBILE V5 BENEFITS CARDS FINAL */
+.m-benefits {
+  margin: 30px 14px 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.m-benefits article {
+  min-height: 82px;
+  padding: 13px 14px;
+  border: 1px solid rgba(143, 112, 75, 0.18);
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.84), transparent 78px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(247, 242, 232, 0.92));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.82),
+    0 12px 26px rgba(89, 73, 52, 0.09);
+}
+
+.m-benefits article:not(:last-child)::after {
+  display: none;
+}
+
+.m-benefit-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 34% 24%, rgba(255, 255, 255, 0.62), transparent 24px),
+    linear-gradient(180deg, rgba(127, 150, 88, 0.24), rgba(100, 124, 60, 0.13));
+  box-shadow: inset 0 0 0 1px rgba(57, 74, 35, 0.10);
+}
+
+.m-benefit-icon svg {
+  width: 34px;
+  height: 34px;
+  filter: none;
+}
+
+.m-benefits p {
+  margin: 0;
+  color: var(--orv-green-dark);
+  font-size: 18px;
+  line-height: 1.18;
+  font-weight: 900;
+  text-align: right;
+}
+
+.m-benefits .benefit-leaf,
+.m-benefits .benefit-fill,
+.m-benefits .benefit-box,
+.m-benefits .benefit-line,
+.m-benefits .benefit-wheel {
+  stroke: var(--orv-green-dark);
+}
+
+/* ORVAESH MOBILE V5 TALLER IMAGES REAL FINAL */
+.m-hero {
+  min-height: 520px;
+}
+
+.m-promo {
+  min-height: 300px;
+}
+
+.m-product-card {
+  height: 520px;
+  min-height: 520px;
+}
+
+.m-product-card img {
+  height: 100%;
+}
+
+.m-health-grid article {
+  height: 380px;
+  min-height: 380px;
+}
+
+.m-health-grid img {
+  height: 380px;
+}
+
+.m-article-row article {
+  height: auto;
+  min-height: 430px;
+}
+
+.m-article-row img {
+  height: 330px;
+}
+
+/* ORVAESH MOBILE V5 SECTION TEXT BREAKS REAL FINAL */
+.m-section-story {
+  position: relative;
+  overflow: hidden;
+  margin: 28px 14px 0;
+  padding: 26px 22px 28px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 12% 14%, rgba(255, 255, 255, 0.82), transparent 98px),
+    radial-gradient(circle at 90% 90%, rgba(127, 150, 88, 0.12), transparent 112px),
+    linear-gradient(180deg, rgba(252, 250, 246, 0.92), rgba(247, 242, 232, 0.78));
+  border: 1px solid rgba(143, 112, 75, 0.16);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.84),
+    0 12px 28px rgba(89, 73, 52, 0.08);
+  text-align: right;
+}
+
+.m-section-story::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 0;
+  width: 5px;
+  height: calc(100% - 48px);
+  border-radius: 999px 0 0 999px;
+  background: linear-gradient(180deg, var(--orv-green-soft), var(--orv-green));
+}
+
+.m-section-story span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  background: rgba(100, 124, 60, 0.12);
+  color: var(--orv-green);
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.m-section-story h2 {
+  margin: 0 0 10px;
+  color: var(--orv-green-dark);
+  font-size: 25px;
+  line-height: 1.18;
+  font-weight: 900;
+}
+
+.m-section-story p {
+  margin: 0;
+  color: rgba(57, 74, 35, 0.78);
+  font-size: 16.5px;
+  line-height: 1.58;
+  font-weight: 700;
+}
+/* ORVAESH MOBILE V5 HEALTH TITLE RIGHT REAL FINAL */
+.m-health-head {
+  justify-content: flex-end;
+  direction: rtl;
+}
+
+.m-health-head h2,
+.m-health-head .products-title {
+  margin-right: 0;
+  margin-left: auto;
+  justify-self: end;
+  text-align: right;
+  direction: ltr;
+}
+
+/* ORVAESH MOBILE V5 PORTRAIT IMAGES TRUE FINAL */
+.m-hero {
+  min-height: 590px;
+  background: url('/images/home/8.jpg');
+  background-size: cover;
+  background-position: center 34%;
+}
+
+.m-hero::after {
+  background: rgba(252, 250, 246, 0.18);
+}
+
+.m-hero-copy {
+  right: 18px;
+  left: 18px;
+  bottom: 24px;
+  padding: 22px 20px 24px;
+  border-radius: 26px;
+  background: rgba(252, 250, 246, 0.84);
+  border: 1px solid rgba(143, 112, 75, 0.18);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 14px 32px rgba(89, 73, 52, 0.12);
+}
+
+.m-product-grid {
+  gap: 24px;
+}
+
+.m-product-card {
+  height: 660px;
+  min-height: 660px;
+  border-radius: 32px;
+}
+
+.m-product-card img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-glass {
+  right: 18px;
+  left: 18px;
+  bottom: 18px;
+  width: auto;
+  min-height: 118px;
+  border-radius: 26px;
+}
+
+.m-health-grid {
+  gap: 24px;
+}
+
+.m-health-grid article {
+  height: 560px;
+  min-height: 560px;
+  border-radius: 30px;
+}
+
+.m-health-grid img {
+  height: 560px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.m-health-grid span {
+  right: 22px;
+  left: 22px;
+  bottom: 22px;
+  height: 46px;
+  font-size: 22px;
+  border-radius: 999px;
+}
+
+.m-article-row {
+  gap: 24px;
+}
+
+.m-article-row article {
+  min-height: 560px;
+  border-radius: 30px;
+}
+
+.m-article-row img {
+  height: 455px;
+  object-fit: cover;
+}
+
+/* ORVAESH MOBILE V5 LARGER FONTS REAL FINAL */
+.m-top-strip {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.m-logo-title {
+  font-size: 27px;
+}
+
+.m-logo-subtitle {
+  font-size: 14px;
+}
+
+.m-search input {
+  font-size: 18px;
+}
+
+.m-hero h1 {
+  font-size: 38px;
+  line-height: 1.12;
+}
+
+.m-hero p {
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.m-hero button,
+.m-promo button,
+.m-newsletter button {
+  font-size: 18px;
+}
+
+.m-promo h2,
+.m-promo-copy h2 {
+  font-size: 36px;
+  line-height: 1.12;
+}
+
+.m-promo p,
+.m-promo-copy p {
+  font-size: 21px;
+}
+
+.m-section-head h2,
+.products-title {
+  font-size: 31px;
+  line-height: 1.12;
+}
+
+.m-section-head a {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.section-leaf-svg {
+  width: 44px;
+  height: 44px;
+  flex-basis: 44px;
+}
+
+.product-glass h3 {
+  font-size: 30px;
+  line-height: 1.12;
+}
+
+.product-glass p {
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.product-glass strong {
+  font-size: 29px;
+}
+
+.rate {
+  font-size: 15px;
+}
+
+.heart {
+  font-size: 25px;
+}
+
+.m-health-grid span {
+  height: 56px;
+  font-size: 26px;
+  line-height: 1.1;
+}
+
+.m-article-row p {
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.m-section-story span {
+  font-size: 15px;
+}
+
+.m-section-story h2 {
+  font-size: 31px;
+  line-height: 1.14;
+}
+
+.m-section-story p {
+  font-size: 19px;
+  line-height: 1.58;
+}
+
+.m-newsletter h2,
+.m-newsletter-content h2 {
+  font-size: 34px;
+  line-height: 1.14;
+}
+
+.m-newsletter p,
+.m-newsletter-content p {
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.m-newsletter input {
+  font-size: 17px;
+}
+
+.m-benefits p {
+  font-size: 20px;
+  line-height: 1.22;
+}
+
+.m-menu-welcome h2 {
+  font-size: 29px;
+}
+
+.m-menu-welcome p {
+  font-size: 16px;
+}
+
+.m-menu-card-text strong {
+  font-size: 22px;
+}
+
+.m-menu-card-text small {
+  font-size: 15px;
+}
+
+.m-menu-quick-actions button {
+  font-size: 16px;
+}
+
+.m-full-menu-cta {
+  font-size: 20px;
+}
+
+.m-footer-lite-logo {
+  font-size: 31px;
+}
+
+.m-footer-lite-tagline,
+.m-footer-lite-links a {
+  font-size: 15px;
+}
+
+.m-footer-lite small {
+  font-size: 13px;
+}
+
+.m-bottom-item {
+  font-size: 12px;
+}
+
+/* ORVAESH MOBILE V5 FONTS XL TRUE FINAL */
+.m-page {
+  font-size: 18px;
+}
+
+.m-top-strip {
+  font-size: 18px;
+}
+
+.m-logo-title {
+  font-size: 40px;
+}
+
+.m-logo-subtitle {
+  font-size: 15px;
+}
+
+.m-search input {
+  font-size: 20px;
+}
+
+.m-hero h1 {
+  font-size: 42px;
+  line-height: 1.1;
+}
+
+.m-hero p {
+  font-size: 22px;
+}
+
+.m-hero button,
+.m-promo button,
+.m-newsletter button {
+  font-size: 20px;
+}
+
+.m-promo h2,
+.m-promo-copy h2 {
+  font-size: 40px;
+}
+
+.m-promo p,
+.m-promo-copy p {
+  font-size: 23px;
+}
+
+.m-section-head h2,
+.m-section-head .products-title,
+.products-title,
+.section-title-text {
+  font-size: 36px;
+  line-height: 1.08;
+  font-weight: 900;
+}
+
+.m-section-head a {
+  font-size: 18px;
+}
+
+.section-leaf-svg {
+  width: 50px;
+  height: 50px;
+  flex-basis: 50px;
+}
+
+.m-product-card .product-glass h3,
+.product-glass h3 {
+  font-size: 36px;
+  line-height: 1.08;
+}
+
+.m-product-card .product-glass p,
+.product-glass p {
+  font-size: 22px;
+  line-height: 1.34;
+}
+
+.m-product-card .product-glass strong,
+.product-glass strong {
+  font-size: 34px;
+}
+
+.m-product-card .rate,
+.rate {
+  font-size: 17px;
+}
+
+.m-product-card .heart,
+.heart {
+  font-size: 28px;
+}
+
+.m-health-grid span {
+  height: 64px;
+  font-size: 30px;
+}
+
+.m-article-row p {
+  font-size: 25px;
+}
+
+.m-section-story span {
+  font-size: 17px;
+}
+
+.m-section-story h2 {
+  font-size: 35px;
+  line-height: 1.12;
+}
+
+.m-section-story p {
+  font-size: 21px;
+}
+
+.m-newsletter h2,
+.m-newsletter-content h2 {
+  font-size: 38px;
+}
+
+.m-newsletter p,
+.m-newsletter-content p {
+  font-size: 21px;
+}
+
+.m-newsletter input {
+  font-size: 19px;
+}
+
+.m-benefits p {
+  font-size: 23px;
+}
+
+.m-menu-welcome h2 {
+  font-size: 32px;
+}
+
+.m-menu-welcome p {
+  font-size: 18px;
+}
+
+.m-menu-card-text strong {
+  font-size: 25px;
+}
+
+.m-menu-card-text small {
+  font-size: 17px;
+}
+
+.m-menu-quick-actions button {
+  font-size: 18px;
+}
+
+.m-full-menu-cta {
+  font-size: 22px;
+}
+
+.m-footer-lite-logo {
+  font-size: 34px;
+}
+
+.m-footer-lite-tagline,
+.m-footer-lite-links a {
+  font-size: 17px;
+}
+
+.m-footer-lite small {
+  font-size: 15px;
+}
+
+.m-bottom-item {
+  font-size: 13px;
+}
+
+/* ORVAESH MOBILE V5 POPULAR SECTION XXL ABSOLUTE FINAL */
+.m-section:has(.m-article-row) .m-section-head {
+  min-height: 70px;
+  margin-bottom: 24px;
+}
+
+.m-section:has(.m-article-row) .products-title,
+.m-section:has(.m-article-row) .section-title-text {
+  font-size: 46px;
+  line-height: 1.04;
+  font-weight: 950;
+}
+
+.m-section:has(.m-article-row) .section-leaf-svg {
+  width: 60px;
+  height: 60px;
+  flex-basis: 60px;
+}
+
+.m-section:has(.m-article-row) .m-section-head a {
+  font-size: 23px;
+  line-height: 1;
+  font-weight: 950;
+}
+
+.m-article-row article {
+  min-height: 645px;
+  border-radius: 32px;
+}
+
+.m-article-row img {
+  height: 490px;
+}
+
+.m-article-row p {
+  min-height: 155px;
+  padding: 30px 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--orv-green-dark);
+  font-size: 40px;
+  line-height: 1.12;
+  font-weight: 950;
+  text-align: right;
+}
+
+/* ORVAESH MOBILE V5 POPULAR TEXT RIGHT FINAL */
+.m-article-row p {
+  direction: rtl;
+  justify-content: flex-start;
+  text-align: right;
+}
